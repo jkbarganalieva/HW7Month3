@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/blankFragmentRV">
+
+    <fragment
+        android:id="@+id/blankFragmentRV"
+        android:name="com.geektech.hw7month3.BlankFragmentRV"
+        android:label="fragment_blank_r_v"
+        tools:layout="@layout/fragment_blank_r_v" >
+
+        <action
+            android:id="@+id/action_blankFragmentRV_to_blankFragmentINFO"
+            app:destination="@id/blankFragmentINFO" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentINFO"
+        android:name="com.geektech.hw7month3.BlankFragmentINFO"
+        android:label="fragment_blank_i_n_f_o"
+        tools:layout="@layout/fragment_blank_i_n_f_o">
+    <argument
+        android:name="rick_character"
+        app:argType= "com.geektech.hw7month3.Rick" />
+    </fragment>
+
+
+</navigation>
